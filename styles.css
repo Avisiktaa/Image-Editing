@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --col1: #341ccd;
+    --col2: #f44336;
+    --text-color: #333;
+    --font-family: 'Orbitron', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background:linear-gradient(135deg, var(--col1) , var(--col2) );
+    margin: 0;
+}
+
+.container {
+    background: rgba(227, 161, 161, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    background:linear-gradient(135deg, var(--col1) , var(--col2) ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#upload {
+    display: none;
+}
+
+.custom-file-upload {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background:linear-gradient(135deg, var(--col1) , var(--col2) );
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.custom-file-upload:hover {
+    background:linear-gradient(135deg, var(--col2) , var(--col1) );
+}
+
+.canvas-container {
+   /*display: none;
+*/}
+
+#canvas {
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    object-fit: contain;
+}
+
+.controls {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font: 1em sans-serif;
+}
+
+input[type="range"] {
+    max-width: 200px;
+    margin: 0 auto;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, var(--col1), var(--col2));
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--col2), var(--col1));
+    cursor: pointer;
+}
+
+#download {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background:linear-gradient(135deg, var(--col1) , var(--col2) );
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    font: 1em sans-serif;
+}
+#download:hover {
+    background:linear-gradient(135deg, var(--col2) , var(--col1) );
+}
+
